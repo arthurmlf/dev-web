@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var nome = "João";
+        //var pode ser string, valores inteiros, valores tipo float, valores boleanos (lógicos)
+        // usar ".toLocaleLowerCase()" coloca toda a string em caixa baixa
+        // para remover espaços vazios antes e depois da strigs usar comando .trim()
+        // para quebrar a string em um elemento específico comando .split('elemento')
+        // para juntar strings comando .join('')
+        let idade = 20;
+        const peso = 80.5;
+        var casado = true;
+        var textoCompleto = "Nome: " + nome + " Idade: " + idade + " Peso: " + peso + " Casado: " + casado;
+        console.log(nome);
+        alert(textoCompleto)
+        console.log(typeof nome);
+        console.log(typeof idade);
+        console.log(typeof peso);
+        console.log(typeof casado);
+        var alunos = [
+            'yara',
+            'leidson',
+            'davi',
+            123,
+            '123.4',
+            ['yara2','leidson2','davi2'],
+            true
+        ];
+        console.log(alunos[5][0]);
+        var primeiroElemento = alunos[0];
+        var segundoElemento = alunos[5][2];
+        var [
+            primeiro,
+            segundo,
+            terceiro,
+            quarto,
+            quinto,
+            sexto,
+            setimo,
+        ] = alunos;
+        console.log(quinto)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

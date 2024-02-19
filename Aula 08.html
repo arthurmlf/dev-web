@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08</title>
+    <script>
+        alert('Olá mundo')
+        var numerico1 = 10; //inteiro.
+        numerico1 = `${numerico1}`; //Usar crase, cifrão e chaves para atribuir o valor da variável numerico1 como texto e não mais com inteiro.
+        var numerico2 = 10.2; //float.
+        var string = "Sequencias de caracteres"; //string.
+        var booleano = true; //booleano.
+        var complexoArray = [numerico1, numerico2, string, booleano]; //array de um tipo específico.
+        var [item1, item2, item3, item4] = complexoArray; //atribuir aos itens (novo array) os valores do array complexoArray.
+        var [, , ,itemQueEuQuero] = complexoArray; // Criar um array somente com o valor da posição desejada no caso o 4º.
+        console.log(complexoArray);
+        var pincel = {
+            cor: 'azul',
+            tamanho: 10,
+            marca: 'pilot',
+            formato: 'ponta redonda',
+            preco: 2.5,
+            descricao: 'pincel azul pilot ponta redonda',
+        };
+        var cor = pincel.cor; //extrai a propriedade cor dentro do objeto pincel.
+        var {cor} = pincel; //extrai a propriedade cor dentro do objeto pincel de forma mais simples.
+        var caixaDePincel = {
+            quantidadeMaxima: 10,
+            descricao: 'caixa com 10 pinceis',
+            preco: 20,
+            pinceis: {
+                pincel,
+                pincel,
+                pincel,
+                pincel,
+            }
+        };
+        var miqueias = {
+            status: 'Professor',
+            altura: 1.78,
+            raça: 'branco',
+            óculos: true,
+            sexo: 'masculino',
+        };
+        var yara = {
+            status: 'Aluno',
+            altura: 1.60,
+            raça: 'pardo',
+            óculos: true,
+            sexo: 'feminino',
+        };
+        var thiago = {
+            status: 'Aluno',
+            altura: 1.82,
+            raça: 'branco',
+            óculos: true,
+            sexo: 'masculino',
+        };
+        var bruno = {
+            status: 'Aluno',
+            altura: 1.62,
+            raça: 'branco',
+            óculos: true,
+            sexo: 'masculino',
+        };
+        var arthur = {
+            status: 'Aluno',
+            altura: 1.75,
+            raça: 'pardo',
+            óculos: true,
+            sexo: 'masculino',
+        };
+        var karen = {
+            status: 'Aluno',
+            altura: 1.70,
+            raça: 'pardo',
+            óculos: false,
+            sexo: 'feminino',
+        };
+        var salaDeAula = {
+            andar: '1º',
+            laboratorio: true,
+            turno: 'noite',
+            bloco: 'A',
+            pessoas: {
+                miqueias,
+                yara,
+                thiago,
+                bruno,
+                arthur,
+                karen
+            }
+        };
+        console.log(salaDeAula)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
